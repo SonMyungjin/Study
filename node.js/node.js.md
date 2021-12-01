@@ -274,3 +274,454 @@ html
 ```
 
 * \= 뒤는 변수명 → `app.js` 의 res.render( ) 안에 명시 해줘야 함
+
+
+
+
+
+### **Express, URL을 이용한 정보의 전달**
+
+#### 쿼리 스트링 소개
+
+#### query 객체의 사용법
+
+```jsx
+//라우터
+app.get('/topic', function (req, res) {
+   res.send(req.query.id); //id 대신 name이라 쓰면 URL에 ?name= 으로
+});
+```
+
+* function 부터는 express의 함수로 인해 사용 가능
+
+#### query 객체의 이용
+
+```jsx
+//라우터
+app.get('/topic', function (req, res) {
+    var topics = [
+        'JavaScript is...',
+        'Nodejs is...',
+        'Express is...'
+    ];
+    var output = `
+    <a href="/topic?id=0">JavaScript</a><br>
+    <a href="/topic?id=1">Nodejs</a><br>
+    <a href="/topic?id=2">Express</a><br><br>
+    ${topics[req.query.id]}
+    `
+    res.send(output);
+});
+```
+
+#### 시멘틱 URL
+
+* URL
+  * 쿼리 스트링 : localhost:3000/topic?id=2
+  * 시멘틱 URL : localhost:3000/topic/2
+
+```jsx
+//라우터
+app.get('/topic/:id', function (req, res) {
+    var topics = [
+        'JavaScript is...',
+        'Nodejs is...',
+        'Express is...'
+    ];
+    var output = `
+    <a href="/topic?id=0">JavaScript</a><br>
+    <a href="/topic?id=1">Nodejs</a><br>
+    <a href="/topic?id=2">Express</a><br><br>
+    ${topics[req.params.id]}
+    `
+    res.send(output); 
+});
+
+app.get('/topic/:id/:mode', function(req, res) {
+    res.send(req.params.id+','+req.params.mode)
+})
+```
+
+### ****
+
+### **Express, POST 방식을 이용한 정보의 전달**
+
+#### POST 방식을 이용한 정보의 전달 1
+
+* 사용자의 정보를 서버로 전송할 때는 GET 보다는 POST!
+
+#### POST 방식을 이용한 정보의 전달 2 : form
+
+* `form.jade`
+
+```jsx
+doctype html 
+html 
+    head 
+        meta(charset='utf-8')
+    body
+     form(action="/form_receiver" method="post") 
+        p 
+            input(type="text" name="title")
+        p
+            textarea(name="description")
+        p
+            input(type="submit")
+```
+
+* `app.js`
+
+```jsx
+//라우터
+app.get('/form', function(req,res) {
+    res.render('form');
+})
+
+app.get('/form_receiver', function(req,res) {
+    var title = req.query.title;
+    var description = req.query.description;
+    res.send(title+','+description);
+
+```
+
+#### POST 방식을 이용한 정보의 전달 3 : POST
+
+```jsx
+//모듈
+var bodyParser = require('body-parser');
+
+//정적 파일
+app.use(bodyParser.urlencoded({extended: false}));
+
+//라우터
+app.post('/form_receiver', function(req,res) {
+    var title = req.body.title;
+    var description = req.body.description;
+    res.send(title+','+description);
+})
+```
+
+*   `req.body`
+
+    * `body-parser`라는 모듈을 포함 시켜야 함 → 미들웨어
+      * 사용자의 요청을 post 방식으로 사용할 수 있도록 해주는 모듈
+
+
+
+#### POST 방식을 이용한 정보의 전달 4 : GET과 POST 용도
+
+* GET
+  * URL에 데이터가 포함되는 쿼리 스트링 방식
+  * express가 기본적으로 제공
+* POST
+  * URL에 데이터가 포함되지 않고 용량이 큰 데이터 전송
+  * express가 기본적으로 제공 X
+    * 미들웨어인 body-parser 사용
+
+
+
+### **node.js를 이용한 웹 앱 제작 실습**
+
+* DB사용 x → 파일 사용
+
+#### 라우팅
+
+* `app_file.js`
+
+```jsx
+//모듈 가져오기
+var express = require('express');
+var app = express();
+
+//코드를 uglify하지 않고 pretty하게
+app.locals.pretty = true;
+
+//템플릿 엔진
+app.set('views', './views_file');
+app.set('view engine', 'jade'); //jade 엔진 사용
+
+//라우팅
+app.get('/topic/new', function(req,res) {
+    res.render('new');
+})
+
+app.post('/topic', function(req,res) {
+    res.send('Hi, post');
+})
+
+//특정 포트 지정
+app.listen(3000, function() {
+    console.log('Connected, 3000 port!');
+})
+```
+
+* `new.jade`
+
+```jsx
+doctype html 
+html 
+ head 
+  meta(charset='utf-8')
+ body 
+  form(action='/topic' method='post')
+   p
+    input(type='text' name='title' placeholder='title')
+   p 
+    textarea(name='description') 
+   p 
+    input(type='submit')
+```
+
+#### 본문 저장
+
+* `app_file.js`
+
+```jsx
+//모듈 가져오기
+var express = require('express');
+var bodyParser = require('body-parser');
+var fs = require('fs');
+
+var app = express();
+
+app.use(bodyParser.urlencoded({ extended: false }))
+
+//코드를 uglify하지 않고 pretty하게
+app.locals.pretty = true;
+
+//템플릿 엔진
+app.set('views', './views_file');
+app.set('view engine', 'jade'); //jade 엔진 사용
+
+//라우팅
+app.get('/topic/new', function(req,res) {
+    res.render('new');
+})
+
+app.post('/topic', function(req,res) {
+    var title = req.body.title;
+    var description = req.body.description;
+
+    // 좋은 방법은 아님
+    fs.writeFile('data/'+title, description, function(err) {
+        if(err){
+            console.log(err);
+            res.status(500).send('Internal Server Error');
+        }
+        res.send('Success!');
+    });
+
+})
+
+//특정 포트 지정
+app.listen(3000, function() {
+    console.log('Connected, 3000 port!');
+})
+```
+
+* 사용자에게 받은 정보(title, description)
+  * data 폴더 안에 제목은 title, 본문 내용은 description인 파일을 생성
+
+#### 글 목록 만들기
+
+* `app_file.js`
+
+```jsx
+//모듈 가져오기
+var express = require('express');
+var bodyParser = require('body-parser');
+var fs = require('fs');
+
+var app = express();
+
+app.use(bodyParser.urlencoded({ extended: false }));
+
+//코드를 uglify하지 않고 pretty하게
+app.locals.pretty = true;
+
+//템플릿 엔진
+app.set('views', './views_file');
+app.set('view engine', 'jade'); //jade 엔진 사용
+
+//라우팅
+app.get('/topic/new', function(req,res) {
+    res.render('new');
+});
+
+app.get('/topic', function(req,res) {
+   fs.readdir('data', function(err, files) {
+       if(err){
+           console.log(err);
+           res.status(500).send('Internal Server Error');
+        }
+        res.render('view', {topics: files});
+   });
+});
+
+app.post('/topic', function(req,res) {
+    var title = req.body.title;
+    var description = req.body.description;
+
+    // 좋은 방법은 아님
+    fs.writeFile('data/'+title, description, function(err) {
+        if(err){
+            console.log(err);
+            res.status(500).send('Internal Server Error');
+        }
+        res.send('Success!');
+    });
+
+})
+
+//특정 포트 지정
+app.listen(3000, function() {
+    console.log('Connected, 3000 port!');
+})
+```
+
+* `view.jade`
+
+```jsx
+doctype html 
+html 
+ head 
+  meta(charset='utf-8')
+ body 
+  h1 Server Side JavaScript 
+  ul 
+   each topic in topics 
+    li 
+     a(href='/topic/'+topic)= topic
+```
+
+#### 본문 읽기
+
+* app.get('/topic/:id') → : 은 바뀔 수 있는 정보를 의미함
+* `app_file.js`
+
+```jsx
+//모듈 가져오기
+var express = require('express');
+var bodyParser = require('body-parser');
+var fs = require('fs');
+
+var app = express();
+
+app.use(bodyParser.urlencoded({ extended: false }));
+
+//코드를 uglify하지 않고 pretty하게
+app.locals.pretty = true;
+
+//템플릿 엔진
+app.set('views', './views_file');
+app.set('view engine', 'jade'); //jade 엔진 사용
+
+//라우팅
+app.get('/topic/new', function(req,res) {
+    res.render('new');
+});
+
+app.get('/topic', function(req,res) {
+   fs.readdir('data', function(err, files) {
+       if(err){
+           console.log(err);
+           res.status(500).send('Internal Server Error');
+        }
+        res.render('view', {topics:files});
+   });
+});
+
+app.get('/topic/:id', function(req, res) {
+   var id = req.params.id;
+
+   fs.readdir('data', function(err, files) {
+    if(err){
+        console.log(err);
+        res.status(500).send('Internal Server Error');
+     }
+     fs.readFile('data/'+id, 'utf-8', function(err, data) {
+        if(err){
+            console.log(err);
+            res.status(500).send('Internal Server Error');
+        }
+        res.render('view', {topics:files, title:id, description:data});
+       });
+    });   
+});
+
+app.post('/topic', function(req,res) {
+    var title = req.body.title;
+    var description = req.body.description;
+
+    // 좋은 방법은 아님
+    fs.writeFile('data/'+title, description, function(err) {
+        if(err){
+            console.log(err);
+            res.status(500).send('Internal Server Error');
+        }
+        res.send('Success!');
+    });
+
+})
+
+//특정 포트 지정
+app.listen(3000, function() {
+    console.log('Connected, 3000 port!');
+})
+```
+
+* `view.jade`
+
+```jsx
+doctype html 
+html 
+ head 
+  meta(charset='utf-8')
+ body 
+  h1 Server Side JavaScript 
+  ul 
+   each topic in topics 
+    li 
+     a(href='/topic/'+topic)= topic
+  article 
+   h2= title 
+   = description
+```
+
+#### 코드의 개선
+
+* 코드의 개선을 위해서는 중복 제거 필요!
+
+```jsx
+//라우팅
+app.get(['/topic', '/topic/:id'], function(req,res) {
+   fs.readdir('data', function(err, files) {
+       if(err){
+           console.log(err);
+           res.status(500).send('Internal Server Error');
+        }
+        var id = req.params.id;
+        if(id){
+        // id값이 있을 때
+        fs.readFile('data/'+id, 'utf-8', function(err, data) {
+            if(err){
+                console.log(err);
+                res.status(500).send('Internal Server Error');
+            }
+            res.render('view', {topics:files, title:id, description:data});
+           });
+        }else{
+        // id값이 있을 때
+        res.render('view', {topics:files, title:'Welcome', description:'Hello, JavaScript for server'});
+        }
+   });
+});
+```
+
+### **TIP**
+
+#### Supervisor
+
+* 변경이 생기면 노드를 자동으로 껐다 키는 모듈
+* **npm i  supervisor -g**
+
