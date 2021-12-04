@@ -1,2 +1,3 @@
-# Study
-JavaScript 및 Node.js 공부 요약 자료입니다.
+# 강의
+
+Node.js 강 요약 자료입니다.
