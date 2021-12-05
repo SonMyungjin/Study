@@ -1,6 +1,7 @@
 # 자료형
 
 * 자바스크립트에는 <mark style="color:orange;">여덟 가지 기본 자료형</mark>이 있음
+* Number, String, Object, Undefined, Null, Boolean, Symbol
 
 
 
