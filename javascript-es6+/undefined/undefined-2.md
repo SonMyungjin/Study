@@ -35,7 +35,7 @@ let user = {
 };
 ```
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (3) (1).png>)
 
 * 화살표는 객체 참조를 나타냄
 * 전역 변수 `"user"`는 `{name: "John"}` (줄여서 John)이라는 객체를 참조

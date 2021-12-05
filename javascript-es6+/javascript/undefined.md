@@ -11,7 +11,7 @@ let message;
 message = 'Hello'; // 문자열을 저장
 ```
 
-![](<../../.gitbook/assets/image (2).png>) `message`라는 이름표가 붙어있는 상자에 `"Hello!"`라는 값을 저장
+![](<../../.gitbook/assets/image (2) (1).png>) `message`라는 이름표가 붙어있는 상자에 `"Hello!"`라는 값을 저장
 
 
 

@@ -21,3 +21,6 @@
     * [메소드와 this](javascript-es6+/undefined/this.md)
     * [new 연산자와 생성자 함수](javascript-es6+/undefined/new.md)
     * [심볼형](javascript-es6+/undefined/undefined-3.md)
+  * [자료구조와 자료형](javascript-es6+/undefined-1/README.md)
+    * [배열](javascript-es6+/undefined-1/undefined.md)
+    * [배열과 메소드](javascript-es6+/undefined-1/undefined-1.md)
