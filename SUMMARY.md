@@ -26,3 +26,7 @@
     * [배열과 메소드](javascript-es6+/undefined-1/undefined-1.md)
     * [iterable 객체](javascript-es6+/undefined-1/iterable.md)
     * [Map과 Set](javascript-es6+/undefined-1/map-set.md)
+  * [함수 심화학습](javascript-es6+/undefined-2/README.md)
+    * [재귀와 스택](javascript-es6+/undefined-2/undefined.md)
+    * [나머지 매개변수와 전개 문법](javascript-es6+/undefined-2/undefined-1.md)
+    * [변수의 유효범위와 클로저](javascript-es6+/undefined-2/undefined-2.md)

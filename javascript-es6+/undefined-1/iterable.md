@@ -1,8 +1,18 @@
 ---
-description: https://ko.javascript.info/iterable
+description: >-
+  https://ko.javascript.info/iterable,
+  https://www.inflearn.com/course/functional-es6
 ---
 
 # iterable 객체
+
+* 이터러블/이터레이터 프로토콜
+  * <mark style="color:red;">**이터러블**</mark>: 이터레이터를 리턴하는 Symbol.iterator 를 가진 값
+  * <mark style="color:red;">**이터레이터**</mark>: { value, done } 객체를 리턴하는 next() 를 가진 값
+  * <mark style="color:red;">**이터러블/이터레이터 프로토콜**</mark>: 이터러블을 for...of, 전개 연산자 등과 함께 동작하도록한 규약
+  * Array, Set, Map은 JavaScript에 있는 내장 객체로 이터러블/이터레이터 프로토콜을 따르고 있음
+
+_<mark style="color:orange;">****</mark>_
 
 * _<mark style="color:orange;">**반복 가능한(iterable, 이터러블)**</mark>_<mark style="color:orange;">** **</mark><mark style="color:orange;">**객체**</mark> : 배열을 일반화한 객체
 * 이터러블 이라는 개념을 사용하면 어떤 객체에든 `for..of` 반복문을 적용할 수 있음
@@ -32,7 +42,7 @@ let range = {
 *   `for..of`가 시작되자마자 `for..of`는 `Symbol.iterator`를 호출
 
     * `Symbol.iterator`가 없으면 에러 발생
-    * `Symbol.iterator`는 반드시 _이터레이터(iterator, 메서드 `next`가 있는 객체)_ 를 반환해야 함
+    * `Symbol.iterator`는 반드시 _이터레이터(iterator, 메드 `next`가 있는 객체)_ 를 반환해야 함
 
 
 *   이후 `for..of`는 _반환된 객체(이터레이터)만_을 대상으로 동작
@@ -41,7 +51,7 @@ let range = {
 *   `for..of`에 다음 값이 필요하면, `for..of`는 이터레이터의 `next()`메서드를 호출
 
 
-* `next()`의 반환 값은 `{done: Boolean, value: any}`와 같은 형태이어야 함
+* `next()`의 반환 값은 `{value: any, done: Boolean}`와 같은 형태이어야 함
   * `done=true`는 반복이 종료되었음을 의미
   * `done=false`일땐 `value`에 다음 값이 저장
 
@@ -59,14 +69,14 @@ let range = {
 range[Symbol.iterator] = function() {
 
   // Symbol.iterator는 이터레이터 객체를 반환
-  // 2. 이후 for..of는 반환된 이터레이터 객체만을 대상으로 동작하는데, 이때 다음 값도 정해
+  // 2. 이후 for..of는 반환된 이터레이터 객체만을 대상으로 동작하는데, 이때 다음 값도 정해짐
   return {
     current: this.from,
     last: this.to,
 
     // 3. for..of 반복문에 의해 반복마다 next()가 호출
     next() {
-      // 4. next()는 값을 객체 {done:.., value :...}형태로 반환해야 합니다.
+      // 4. next()는 값을 객체 {done:.., value :...}형태로 반환해야함
       if (this.current <= this.last) {
         return { done: false, value: this.current++ };
       } else {
@@ -85,9 +95,9 @@ for (let num of range) {
 
 
 * 이터러블 객체의 핵심은 '관심사의 분리(Separation of concern, SoC)'에 있음
-  * `range`엔 메서드 `next()`가 없음
-  * 대신 `range[Symbol.iterator]()`를 호출해서 만든 ‘이터레이터’ 객체와 이 객체의 메서드 `next()`에서 반복에 사용될 값을 만들어냄
-* 이렇게 하면 이터레이터 객체와 반복 대상인 객체를 분리할 수 있
+  * `range`엔 메소드 `next()`가 없음
+  * 대신 `range[Symbol.iterator]()`를 호출해서 만든 ‘이터레이터’ 객체와 이 객체의 메소드 `next()`에서 반복에 사용될 값을 만들어냄
+* 이렇게 하면 이터레이터 객체와 반복 대상인 객체를 분리할 수 있음
 * 이터레이터 객체와 반복 대상 객체를 합쳐서 `range` 자체를 이터레이터로 만들면 코드가 더 간단해
 
 ```

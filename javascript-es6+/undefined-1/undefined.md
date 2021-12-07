@@ -97,7 +97,7 @@ arr[3](); // 안녕하세요.
     * `push` – 요소를 스택 끝에 집어넣음
     * `pop` – 스택 끝 요소를 추출
 
-    ![](<../../.gitbook/assets/image (4).png>)
+    ![](<../../.gitbook/assets/image (4) (1).png>)
 
 
 
@@ -157,7 +157,7 @@ alert( fruits ); // 사과,오렌지,배
 
 * `push`와 `pop`은 빠르지만 `shift`와 `unshift`는 느림
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (2) (1).png>)
 
 
 
@@ -167,7 +167,7 @@ alert( fruits ); // 사과,오렌지,배
 2. 모든 요소를 왼쪽으로 이동시킴->  이때 인덱스 `1`은 `0`, `2`는 `1`로 변함
 3. `length` 프로퍼티 값을 갱신
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (3) (1).png>)
 
 * **배열에 요소가 많으면 요소가 이동하는 데 걸리는 시간이 길고 메모리 관련 연산도 많아짐**
   * `push`와 `pop`은 끝을 제거/추가 하기 때문에 요소 이동을 수반 X&#x20;
