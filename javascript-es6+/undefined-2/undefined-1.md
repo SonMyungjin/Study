@@ -79,7 +79,7 @@ alert( Math.max(...arr) ); // 5
 ```
 let str = "Hello";
 
-// Array.from은 이터러블을 배열로 바꿔줍니다.
+// Array.from은 이터러블을 배열로 바꿔
 alert( Array.from(str) ); // H,e,l,l,o
 ```
 
