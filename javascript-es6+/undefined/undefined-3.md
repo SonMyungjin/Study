@@ -11,7 +11,7 @@ description: https://ko.javascript.info/symbol
 ### [심볼](https://ko.javascript.info/symbol#ref-1137)
 
 * '심볼(symbol)'은 <mark style="color:orange;">**유일한 식별자(unique identifier)**</mark>를 만들고 싶을 때 사용
-* `Symbol()`을 사용하면 심볼값을 만들 수 있
+* `Symbol()`을 사용하면 심볼값을 만들 수 있음 &#x20;
 
 ```
 // id는 새로운 심볼이 됨
@@ -50,7 +50,7 @@ let id = Symbol("id");
 
 user[id] = 1;
 
-alert( user[id] ); // 심볼을 키로 사용해 데이터에 접근할 수 있
+alert( user[id] ); // 심볼을 키로 사용해 데이터에 접근할 수 있음  
 ```
 
 *   문자열 `"id"`를 키로 사용해도 되는데 `Symbol("id")`을 사용한 이유가 무엇일까?
@@ -84,7 +84,7 @@ alert( id === idAgain ); // true
 
 #### Symbol.keyFor
 
-* 전역 심볼을 찾을 때 사용되는 `Symbol.for(key)`에 반대되는 메드
+* 전역 심볼을 찾을 때 사용되는 `Symbol.for(key)`에 반대되는 메소드 &#x20;
 * `Symbol.keyFor(sym)`를 사용하면 이름을 얻을 수 있음
 
 ```

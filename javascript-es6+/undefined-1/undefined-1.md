@@ -160,7 +160,7 @@ alert( arr.concat(arrayLike) ); // 1,2,something,else
 
 ### [forEach로 반복작업 하기](https://ko.javascript.info/array-methods#ref-61)
 
-* arr.forEach는 주어진 함수를 배열 요소 각각에 대해 실행할 수 있게 해
+* arr.forEach는 주어진 함수를 배열 요소 각각에 대해 실행할 수 있게 해줌 &#x20;
 
 ```
 // 기본 문법 
@@ -211,7 +211,7 @@ alert( arr.includes(1) ); // true
 ```
 
 * 위 메소드들은 요소를 찾을 때 완전 항등 연산자 `===` 을 사용
-  * `false`를 검색하면 정확히 `false`만을 검색하지, 0을 검색하진 않
+  * `false`를 검색하면 정확히 `false`만을 검색하지, 0을 검색하진 않음 &#x20;
 * 요소의 위치를 정확히 알고 싶은게 아니고 요소가 배열 내 존재하는지 여부만 확인하고 싶다면 `arr.includes`를 사용
 
 
@@ -443,7 +443,7 @@ alert(result); // 15
 
 ### [Array.isArray로 배열 여부 알아내기](https://ko.javascript.info/array-methods#ref-72)
 
-* 자바스크립트에서 배열은 독립된 자료형으로 취급되지 않고 객체형에 속
+* 자바스크립트에서 배열은 독립된 자료형으로 취급되지 않고 객체형에 속함  &#x20;
 * 따라서, `typeof`로는 일반 객체와 배열을 구분할 수 없음
 
 ```
