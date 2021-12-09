@@ -173,7 +173,7 @@ function sayHiBye(firstName, lastName) {
 
 
 
-![](<../../.gitbook/assets/image (13).png>)
+![](<../../.gitbook/assets/image (14).png>)
 
 * 실행 흐름이 중첩 함수의 본문으로 넘어오면 `count` 변수가 필요한데, 먼저 자체 렉시컬 환경에서 변수를 찾음
 * 익명 중첩 함수엔 지역변수가 없기 때문에 이 렉시컬 환경은 비어있는 상황(`<empty>`)
