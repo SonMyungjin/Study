@@ -84,7 +84,7 @@ function sayHiBye(firstName, lastName) {
 
 
 
-![](<../../.gitbook/assets/image (1).png>)
+![](<../../.gitbook/assets/image (1) (1).png>)
 
 * 코드가 실행되고 실행 흐름이 이어져 나가면서 **렉시컬 환경은 변화**
 *   우측의 네모 상자는 코드가 한 줄, 한 줄 실행될 때마다 전역 렉시컬 환경이 어떻게 변화하는지 보여줌
@@ -114,7 +114,7 @@ function sayHiBye(firstName, lastName) {
 * **다만 함수 선언문(function declaration)으로 선언한 함수는 일반 변수와는 달리 바로 **<mark style="color:orange;">**초기화**</mark>**된다는 점에서 차이가 있음**
 * 함수 선언문으로 선언한 함수는 렉시컬 환경이 만들어지는 즉시 사용할 수 있음 -> 함수 표현식은 X &#x20;
 
-![](<../../.gitbook/assets/image (7).png>)
+![](<../../.gitbook/assets/image (7) (1).png>)
 
 #### [단계 3. 내부와 외부 렉시컬 환경](https://ko.javascript.info/closure#ref-518)
 
@@ -160,6 +160,31 @@ function sayHiBye(firstName, lastName) {
 
     * 함수는 `[[Environment]]`라 불리는 숨김 프로퍼티를 갖는데,&#x20;
     * 여기에 함수가 만들어진 곳의 렉시컬 환경에 대한 참조가 저장됨
+
+
+
+![](<../../.gitbook/assets/image (6).png>)
+
+* `counter.[[Environment]]`엔 `{count: 0}`이 있는 렉시컬 환경에 대한 참조가 저장
+* 호출 장소와 상관없이 함수가 자신이 태어난 곳을 기억할 수 있는 건 바로 `[[Environment]]` 프로퍼티 덕분
+* `[[Environment]]`는 함수가 생성될 때 딱 한 번 값이 세팅되고 영원히 변하지 않음  &#x20;
+* `counter()`를 호출하면 각 호출마다 새로운 렉시컬 환경이 생성
+* 그리고 이 렉시컬 환경은 `counter.[[Environment]]`에 저장된 렉시컬 환경을 외부 렉시컬 환경으로서 참조
+
+
+
+![](<../../.gitbook/assets/image (13).png>)
+
+* 실행 흐름이 중첩 함수의 본문으로 넘어오면 `count` 변수가 필요한데, 먼저 자체 렉시컬 환경에서 변수를 찾음
+* 익명 중첩 함수엔 지역변수가 없기 때문에 이 렉시컬 환경은 비어있는 상황(`<empty>`)
+* `counter()`의 렉시컬 환경이 참조하는 외부 렉시컬 환경에서 `count`를 찾음
+* &#x20;`count++`가 실행되면서 count 값이 1 증가해야하는데, **변숫값 갱신은 변수가 저장된 렉시컬 환경에서 이루어짐** &#x20;
+
+
+
+![](<../../.gitbook/assets/image (7).png>)
+
+* 실행이 종료된 후의 상태로  `counter()`를 여러 번 호출하면 `count` 변수가 `2`, `3`으로 증가
 
 
 

@@ -35,7 +35,7 @@ while (i) { // i가 0이 되면 조건이 falsy가 되므로 반복문이 멈
 
 ### [‘do…while’ 반복문](https://ko.javascript.info/while-for#ref-901)
 
-* `do..while` 문법을 사용하면 `condition`을 반복문 본문 _아래_로 옮길 수 있
+* `do..while` 문법을 사용하면 `condition`을 반복문 본문 _아래_로 옮길 수 있음 &#x20;
 * 본문이 먼저 실행되고, 조건을 확인한 후 조건이 truthy인 동안엔 본문이 계속 실행
 
 ```
@@ -105,7 +105,7 @@ alert( '합계: ' + sum );
 ```
 for (let i = 0; i < 10; i++) {
 
-  // 조건이 참이라면 남아있는 본문은 실행되지 않습니다.
+  // 조건이 참이라면 남아있는 본문은 실행되지 않음  
   if (i % 2 == 0) continue;
 
   alert(i); // 1, 3, 5, 7, 9가 차례대로 출력됨
@@ -133,7 +133,7 @@ outer: for (let i = 0; i < 3; i++) {
     let input = prompt(`(${i},${j})의 값`, '');
 
     // 사용자가 아무것도 입력하지 않거나 Cancel 버튼을 누르면 두 반복문 모두를 빠져나옴
-    if (!input) break outer; // outer라는 레이블이 붙은 반복문을 찾고, 해당 반복문 빠져 나   
+    if (!input) break outer; // outer라는 레이블이 붙은 반복문을 찾고, 해당 반복문 빠져 나옴   
 
     // 입력받은 값을 가지고 무언가를 함
   }

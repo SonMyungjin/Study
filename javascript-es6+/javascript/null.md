@@ -42,7 +42,7 @@ alert(height ?? 100); // 0
     \`\`
 * `height ?? 100`
   * `height`가 정확하게 `null`이나 `undefined`일 경우에만 `100`이 됨
-  * 예시에선 `height`에 `0`이라는 값을 할당했기 때문에 alert에는 `0`이 출력\\
+  * 예시에선 `height`에 `0`이라는 값을 할당했기 때문에 alert에는 `0`이 출력&#x20;
 
 ### [연산자 우선순위](https://ko.javascript.info/nullish-coalescing-operator#ref-112)
 

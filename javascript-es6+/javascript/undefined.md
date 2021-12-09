@@ -18,7 +18,7 @@ message = 'Hello'; // 문자열을 저장
 #### 변수 명명 규칙
 
 * 변수명에는 오직 문자와 숫자, 그리고 기호 `$`와 `_`만 들어갈 수 있음
-* 첫 글자는 숫자가 될 수 없
+* 첫 글자는 숫자가 될 수 없음 &#x20;
 
 {% hint style="info" %}
 예약어
@@ -54,7 +54,7 @@ const COLOR_GREEN = "#0F0";
 const COLOR_BLUE = "#00F";
 const COLOR_ORANGE = "#FF7F00";
 
-// 색상을 고르고 싶을 때 별칭을 사용할 수 있게 되었습니다.
+// 색상을 고르고 싶을 때 별칭을 사용할 수 있게 됨  
 let color = COLOR_ORANGE;
 alert(color); // #FF7F00
 ```

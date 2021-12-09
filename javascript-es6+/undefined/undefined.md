@@ -17,7 +17,7 @@ description: https://ko.javascript.info/object
 * 객체는 중괄호 `{…}`를 이용해 만들 수 있음
 * 중괄호 안에는 ‘<mark style="color:orange;">**키(key): 값(value)**</mark>’ 쌍으로 구성된 _<mark style="color:red;">**프로퍼티(property)**</mark>_ 를 여러 개 넣을 수 있는데,&#x20;
   * `키`엔 문자형, `값`엔 모든 자료형이 허용
-  * 프로퍼티 키는 ‘프로퍼티 이름’ 이라고도 부
+  * 프로퍼티 키는 ‘프로퍼티 이름’ 이라고도 부름 &#x20;
 
 ```
 let user = new Object(); // '객체 생성자' 문법

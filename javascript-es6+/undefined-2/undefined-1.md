@@ -46,7 +46,7 @@ function showName() {
   alert( arguments[1] );
 
   // arguments는 이터러블 객체이기 때문에
-  // for(let arg of arguments) alert(arg); 를 사용해 인수를 나열할 수 있습니다.
+  // for(let arg of arguments) alert(arg); 를 사용해 인수를 나열할 수 있음  
 }
 
 // 2, Julius, Caesar가 출력됨
@@ -57,7 +57,7 @@ showName("Bora");
 ```
 
 * `arguments`는 유사 배열 객체이면서 이터러블(반복 가능한) 객체로 배열 X
-  * 따라서 배열 메서드를 사용할 수 없다는 단점이 있음&#x20;
+  * 따라서 배열 메소드를 사용할 수 없다는 단점이 있음&#x20;
 
 
 
@@ -79,7 +79,7 @@ alert( Math.max(...arr) ); // 5
 ```
 let str = "Hello";
 
-// Array.from은 이터러블을 배열로 바꿔
+// Array.from은 이터러블을 배열로 바꿔줌  
 alert( Array.from(str) ); // H,e,l,l,o
 ```
 

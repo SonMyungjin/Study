@@ -86,7 +86,7 @@ arr[3](); // 안녕하세요.
     * `push` – 맨 끝에 요소를 추가
     * `shift` – 제일 앞 요소를 꺼내 제거한 후 남아있는 요소들을 앞으로 밀어짐
 
-    ![](<../../.gitbook/assets/image (6).png>)
+    ![](<../../.gitbook/assets/image (6) (1).png>)
 
 
 
