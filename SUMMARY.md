@@ -41,3 +41,5 @@
     * [callback](javascript-es6+/promise-async-await/callback.md)
     * [promise](javascript-es6+/promise-async-await/promise.md)
     * [async와 await](javascript-es6+/promise-async-await/async-await.md)
+* [🔥 용어 정리](undefined/README.md)
+  * [DOM이란?](undefined/dom.md)
