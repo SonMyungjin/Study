@@ -39,3 +39,5 @@
     * [프로토타입 메서드와 \_\_proto\_\_가 없는 객체](javascript-es6+/undefined-3/\_\_proto\_\_.md)
   * [promise와 async, await](javascript-es6+/promise-async-await/README.md)
     * [callback](javascript-es6+/promise-async-await/callback.md)
+    * [promise](javascript-es6+/promise-async-await/promise.md)
+    * [async와 await](javascript-es6+/promise-async-await/async-await.md)
