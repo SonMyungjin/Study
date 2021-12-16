@@ -3,7 +3,6 @@
 * [📗 Node.js](README.md)
   * [강의](readme/undefined/README.md)
     * [Node.js 를 이용해 웹애플리케이션 만들기](readme/undefined/node.js.md)
-  * [개념](readme/undefined-1.md)
 * [📔 JavaScript ES6+](javascript-es6+/README.md)
   * [JavaScript 기본](javascript-es6+/javascript/README.md)
     * [변수와 상수](javascript-es6+/javascript/undefined.md)

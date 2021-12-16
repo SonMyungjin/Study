@@ -14,7 +14,7 @@ let user = { name: "John" };
 let admin = user; // 참조값을 복사함
 ```
 
-![](<../../.gitbook/assets/image (4) (1) (1).png>)
+![](<../../.gitbook/assets/image (4) (1) (1) (1).png>)
 
 
 

@@ -108,7 +108,7 @@ list.next.next.next = { value: 4 };
 list.next.next.next.next = null;
 ```
 
-![](<../../.gitbook/assets/image (4).png>)
+![](<../../.gitbook/assets/image (4) (1).png>)
 
 
 
@@ -120,7 +120,7 @@ let secondList = list.next.next;
 list.next.next = null;
 ```
 
-![](<../../.gitbook/assets/image (11) (1).png>)
+![](<../../.gitbook/assets/image (11) (1) (1).png>)
 
 
 
@@ -144,7 +144,7 @@ list.next.next.next = { value: 4 };
 list = { value: "new item", next: list };
 ```
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (3) (1).png>)
 
 
 
@@ -154,7 +154,7 @@ list = { value: "new item", next: list };
 list.next = list.next.next;
 ```
 
-![](<../../.gitbook/assets/image (5).png>)
+![](<../../.gitbook/assets/image (5) (1).png>)
 
 
 
