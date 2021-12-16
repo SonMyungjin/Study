@@ -120,7 +120,7 @@ let secondList = list.next.next;
 list.next.next = null;
 ```
 
-![](<../../.gitbook/assets/image (11).png>)
+![](<../../.gitbook/assets/image (11) (1).png>)
 
 
 
