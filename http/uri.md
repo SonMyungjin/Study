@@ -11,9 +11,9 @@
   * 리소스 식
   * URL과 URN을 포괄 &#x20;
 
-![](<../.gitbook/assets/image (21).png>)
+![](<../.gitbook/assets/image (29).png>)
 
-![](<../.gitbook/assets/image (27).png>)
+![](<../.gitbook/assets/image (35).png>)
 
 ### <mark style="background-color:blue;">URL과 URN</mark>
 
@@ -39,45 +39,45 @@
 
 ![](<../.gitbook/assets/image (3).png>)
 
-![](<../.gitbook/assets/image (17).png>)
+![](<../.gitbook/assets/image (25).png>)
 
 ![](<../.gitbook/assets/image (6).png>)
 
-![](<../.gitbook/assets/image (15).png>)
+![](<../.gitbook/assets/image (23).png>)
 
-![](<../.gitbook/assets/image (25).png>)
+![](<../.gitbook/assets/image (33).png>)
 
 ![](<../.gitbook/assets/image (1).png>)
 
 ![](<../.gitbook/assets/image (2).png>)
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (17).png>)
 
 
 
 ### <mark style="background-color:blue;">웹 브라우저 요청 흐름</mark>
 
-![](<../.gitbook/assets/image (14).png>)
+![](<../.gitbook/assets/image (21).png>)
 
 ![](<../.gitbook/assets/image (5).png>)
 
-![](<../.gitbook/assets/image (24).png>)
+![](<../.gitbook/assets/image (32).png>)
 
-![](<../.gitbook/assets/image (23).png>)
-
-![](<../.gitbook/assets/image (20).png>)
-
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (31).png>)
 
 ![](<../.gitbook/assets/image (28).png>)
 
-![](<../.gitbook/assets/image (12).png>)
+![](<../.gitbook/assets/image (4).png>)
+
+![](<../.gitbook/assets/image (36).png>)
+
+![](<../.gitbook/assets/image (19).png>)
 
 1. DNS 조회를 통해 IP와 PORT 번호를 알아냄
 2. HTTP 요청 메시지 생성(HTTP 메소드 + path + query string + HTTP 버전 정보 + HOST 정보)
 3. SOCKET 라이브러리를 통해 전달(TCP/IP 연결 + 데이터 전달)
 4. TCP/IP 패킷 생성(출발지IP,PORT + 목적지 IP,PORT), HTTP 메시지 포함
-5. 요청 패킷 전달 -> 서버에 요청 패킷 도 &#x20;
+5. 요청 패킷 전달 -> 서버에 요청 패킷 도착 &#x20;
 6. 서버에서  HTTP 응답 메시지 생성(Content-Type 및 Content-Length 등 생성)
 7. 응답 패킷 전달 -> 웹 브라우저에 응답 패킷 도착   &#x20;
 8. 웹 브라우저는 응답받은 패킷을 HTML 렌더링    &#x20;

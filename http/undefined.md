@@ -48,7 +48,7 @@
 
 ### <mark style="background-color:blue;">인터넷 프로토콜 스택의 4계층</mark>
 
-![](<../.gitbook/assets/image (26).png>)
+![](<../.gitbook/assets/image (34).png>)
 
 <mark style="background-color:blue;"></mark>
 
