@@ -47,18 +47,18 @@
 
 
 * Stateful, Stateless 차이
-  * Stateful : 중간에 서버가 터지면 새로운 요청을 받아야  함&#x20;
-  * Stateless : 클라이언트 요청이 증가해도 서버를 대거 투입할 수 있 &#x20;
+  * **Stateful** : 중간에 서버가 장애나면 새로운 요청을 받아야  함&#x20;
+  * **Stateless** : 클라이언트 요청이 증가해도 서버를 대거 투입할 수 있음 &#x20;
 
-![](<../.gitbook/assets/image (16).png>)
+![](<../.gitbook/assets/image (16) (1).png>)
 
-![](<../.gitbook/assets/image (9).png>)
+![](<../.gitbook/assets/image (9) (1).png>)
 
-![](<../.gitbook/assets/image (12).png>)
+![](<../.gitbook/assets/image (12) (1).png>)
 
 ![](<../.gitbook/assets/image (14).png>)
 
-![](<../.gitbook/assets/image (11).png>)
+![](<../.gitbook/assets/image (11) (1).png>)
 
 * Stateless 실무 한계
   * 모든 것을 무상태로 설계 할 수 있는 경우도 있고 없는 경우도 있음
@@ -90,13 +90,13 @@
 
 
 
-![](<../.gitbook/assets/image (15).png>)
+![](<../.gitbook/assets/image (15) (1).png>)
 
-![](<../.gitbook/assets/image (13).png>)
+![](<../.gitbook/assets/image (13) (1).png>)
 
 
 
 ### <mark style="background-color:blue;">HTTP 메시지</mark>
 
-![](<../.gitbook/assets/image (22).png>)
+![](<../.gitbook/assets/image (22) (1).png>)
 

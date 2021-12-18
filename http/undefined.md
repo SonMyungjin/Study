@@ -9,7 +9,7 @@
 
 #### <mark style="background-color:orange;">IP 패킷 정보</mark>
 
-![](<../.gitbook/assets/image (2) (1).png>)
+![](<../.gitbook/assets/image (2) (1) (1).png>)
 
 * 출발지IP : 나의 IP 정보
 * 목적지IP : 목적지 IP 정보    &#x20;
@@ -24,7 +24,7 @@
 
 #### <mark style="background-color:orange;">서버 패킷 전달</mark>
 
-![](<../.gitbook/assets/image (15) (1).png>)
+![](<../.gitbook/assets/image (15) (1) (1).png>)
 
 
 
@@ -56,7 +56,7 @@
 
 ### <mark style="background-color:blue;">프로토콜 계층</mark>
 
-![](<../.gitbook/assets/image (8).png>)
+![](<../.gitbook/assets/image (8) (1).png>)
 
 <mark style="background-color:blue;"></mark>
 
@@ -71,7 +71,7 @@
 
 &#x20;
 
-![](<../.gitbook/assets/image (12) (1).png>)
+![](<../.gitbook/assets/image (12) (1) (1).png>)
 
 #### <mark style="background-color:orange;">TCP 특징</mark>
 
@@ -97,7 +97,7 @@
 
 #### <mark style="background-color:orange;">순서 보장</mark>
 
-![](<../.gitbook/assets/image (13) (1).png>)
+![](<../.gitbook/assets/image (13) (1) (1).png>)
 
 
 
@@ -138,5 +138,5 @@
   * 전화번호부
   * 도메인 명을 IP 주소로 변환
 
-![](<../.gitbook/assets/image (10) (1).png>)
+![](<../.gitbook/assets/image (10) (1) (1).png>)
 

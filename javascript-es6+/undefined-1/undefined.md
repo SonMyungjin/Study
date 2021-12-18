@@ -97,7 +97,7 @@ arr[3](); // 안녕하세요.
     * `push` – 요소를 스택 끝에 집어넣음
     * `pop` – 스택 끝 요소를 추출
 
-    ![](<../../.gitbook/assets/image (4) (1) (1).png>)
+    ![](<../../.gitbook/assets/image (4) (1) (1) (1).png>)
 
 
 
@@ -157,7 +157,7 @@ alert( fruits ); // 사과,오렌지,배
 
 * `push`와 `pop`은 빠르지만 `shift`와 `unshift`는 느림
 
-![](<../../.gitbook/assets/image (2) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (2) (1) (1) (1) (1).png>)
 
 
 

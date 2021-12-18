@@ -45,7 +45,7 @@ let user = {
 user = null;
 ```
 
-![](<../../.gitbook/assets/image (2) (1) (1).png>)
+![](<../../.gitbook/assets/image (2) (1) (1) (1).png>)
 
 * `user`의 값을 다른 값으로 덮어쓰면 참조(화살표)가 사라짐
 * John은 도달할 수 없는 상태가 되어 가비지 컬렉터는 John을 메모리에서 삭제    &#x20;

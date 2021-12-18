@@ -53,7 +53,7 @@ alert( "다시 호출: " + slow(2) ); // 윗줄과 동일한 결과
   * ‘래퍼(wrapper)’, `function(x)`이 반환
 * 래퍼 `function(x)`는 `func(x)`의 호출 결과를 캐싱 로직으로 감쌈 (wrapping)
 
-![](<../../.gitbook/assets/image (1) (1).png>)
+![](<../../.gitbook/assets/image (1) (1) (1).png>)
 
 * 바깥 코드에서 봤을 때, 함수 `slow`는 래퍼로 감싼 이전이나 이후나 동일한 일을 수행
 * `slow` 본문을 수정하는 것 보다 독립된 래퍼 함수 `cachingDecorator`를 사용할 때 생기는 이점

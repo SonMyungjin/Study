@@ -11,7 +11,7 @@
   * 리소스 식
   * URL과 URN을 포괄 &#x20;
 
-![](<../.gitbook/assets/image (29).png>)
+![](<../.gitbook/assets/image (29) (1).png>)
 
 ![](<../.gitbook/assets/image (35).png>)
 
@@ -43,13 +43,13 @@
 
 ![](<../.gitbook/assets/image (6).png>)
 
-![](<../.gitbook/assets/image (23).png>)
+![](<../.gitbook/assets/image (23) (1).png>)
 
 ![](<../.gitbook/assets/image (33).png>)
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (1) (1).png>)
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (1).png>)
 
 ![](<../.gitbook/assets/image (17).png>)
 
@@ -67,9 +67,9 @@
 
 ![](<../.gitbook/assets/image (28).png>)
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (1).png>)
 
-![](<../.gitbook/assets/image (36).png>)
+![](<../.gitbook/assets/image (36) (1).png>)
 
 ![](<../.gitbook/assets/image (19).png>)
 

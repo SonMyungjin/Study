@@ -10,7 +10,7 @@ description: https://ko.javascript.info/prototype-inheritance
 * 이 숨김 프로퍼티 값은 `null`이거나 다른 객체에 대한 참조가되는데,&#x20;
 * 다른 객체를 참조하는 경우 참조 대상을 '프로토타입(prototype)'이라 부름
 
-![](<../../.gitbook/assets/image (13) (1) (1).png>)
+![](<../../.gitbook/assets/image (13) (1) (1) (1).png>)
 
 * `object`에서 프로퍼티를 읽으려고 하는데,
 * 해당 프로퍼티가 없으면 자바스크립트는 자동으로 프로토타입에서 프로퍼티를 찾음

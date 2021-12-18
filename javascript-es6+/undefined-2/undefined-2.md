@@ -74,7 +74,7 @@ function sayHiBye(firstName, lastName) {
 
 
 
-![](<../../.gitbook/assets/image (9) (1) (1).png>)
+![](<../../.gitbook/assets/image (9) (1) (1) (1).png>)
 
 * 위 코드에는 렉시컬 환경이 하나만 존재
 * 이렇게 스크립트 전체와 관련된 렉시컬 환경은 전역 렉시컬 환경(global Lexical Environment)이라 함
@@ -84,7 +84,7 @@ function sayHiBye(firstName, lastName) {
 
 
 
-![](<../../.gitbook/assets/image (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (1) (1) (1) (1).png>)
 
 * 코드가 실행되고 실행 흐름이 이어져 나가면서 **렉시컬 환경은 변화**
 *   우측의 네모 상자는 코드가 한 줄, 한 줄 실행될 때마다 전역 렉시컬 환경이 어떻게 변화하는지 보여줌
@@ -121,7 +121,7 @@ function sayHiBye(firstName, lastName) {
 * 함수를 호출해 실행하면 새로운 렉시컬 환경이 자동으로 만들어짐
 * 렉시컬 환경에는 함수 호출 시 넘겨받은 **매개변수**와 **함수의 지역 변수**가 저장
 
-![](<../../.gitbook/assets/image (10) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (10) (1) (1) (1) (1).png>)
 
 * 함수가 호출 중인 동안엔 호출 중인 함수를 위한 **내부 렉시컬 환경**과 내부 렉시컬 환경이 가리키는 **외부 렉시컬 환경**을 갖게됨
   * 예시의 내부 렉시컬 환경은 현재 실행 중인 함수인 `say`에 상응함&#x20;
@@ -137,7 +137,7 @@ function sayHiBye(firstName, lastName) {
 
     ****
 
-![](<../../.gitbook/assets/image (12) (1) (1).png>)
+![](<../../.gitbook/assets/image (12) (1) (1) (1).png>)
 
 
 
@@ -150,7 +150,7 @@ function sayHiBye(firstName, lastName) {
 
 #### [단계 4. 함수를 반환하는 함수](https://ko.javascript.info/closure#ref-519)
 
-![](<../../.gitbook/assets/image (8) (1) (1).png>)
+![](<../../.gitbook/assets/image (8) (1) (1) (1).png>)
 
 * `makeCounter()`를 호출하면 두 개의 렉시컬 환경이 만들어짐
 *   현재는 중첩함수가 생성되기만 하고 실행은 되지 않은 상태
