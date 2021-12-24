@@ -54,4 +54,5 @@
 * [🥧 Project(DAM BAEK)](project-dam-baek.md)
 * [🔥 용어 정리](undefined/README.md)
   * [DOM이란?](undefined/dom.md)
-* [🗣 면접 준비](undefined-1.md)
+* [🗣 면접 준비](undefined-1/README.md)
+  * [JAVA](undefined-1/java.md)
