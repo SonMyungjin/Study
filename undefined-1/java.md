@@ -152,3 +152,21 @@ description: https://asfirstalways.tistory.com/158
 ### JDBC란?
 
 * (Java Database Connectivity) java에서 DB에 접근하여 (작업) 데이터를 조회/삽입/수정/삭제 가능 => 연결해주는 응용프로그램 인터페이스인 JAVA API. DBMS 종류에 따라 그에 맞는 jdbc를 설치
+
+
+
+### 서블릿이란?
+
+* 웹 기반의 요청에 대한 동적인 처리가 가능한 Server Side에서 돌아가는 Java Program&#x20;
+* Java 코드 안에 HTML 코드 (하나의 클래스)&#x20;
+* 웹 개발을 위해 만든 표준&#x20;
+* DB와의 통신, Business Logic 호출, 데이터를 읽고 확인하는 작업 등에 유용
+
+
+
+### JSP란?
+
+* Java 언어를 기반으로 하는 Server Side 스크립트 언어&#x20;
+* HTML 코드 안에 Java 코드
+* Java 언어를 기반으로 하는 Server Side 스크립트 언어 HTML 코드 안에 Java 코드&#x20;
+
