@@ -6,6 +6,12 @@ description: https://asfirstalways.tistory.com/158
 
 ### JVM이란?
 
+1\. 스택기반의 가상머신
+
+2\. 가바지 컬렉션
+
+3\. 플랫폼에 독립적
+
 * JVM 역할은 자바 애플리케이션을 클래스 로더를 통해 읽어 들여 자바 API와 함께 실행하는 것
 * JVM과 OS사이에서 **중계자 역할**을 수행하여 JAVA가 OS에 구애받지 않고 재사용을 가능하게 해줌
 * 메모리관리, Garbage collection을 수행 &#x20;
