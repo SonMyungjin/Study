@@ -201,3 +201,9 @@ FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY
   * (COMMIT, ROLLBACK만 존재)
 
 ![](<../.gitbook/assets/image (17).png>)
+
+### **엔터티(Entity), 엔터티 타입(Entitiy type) 및 엔터티 집합(Entitiy set)**
+
+* <mark style="color:blue;">**엔터티**</mark>는 실세계에서 독립적으로 존재하는 장소, 클래스 또는 객체 일 수 있습니다.
+* <mark style="color:blue;">**엔터티 타입**</mark>은 유사한 특성을 가진 엔터티 집합을 나타냅니다.
+* 데이터베이스에 설정된 엔티티는 특정 엔티티 유형을 갖는 <mark style="color:blue;">**엔티티의 집합**</mark>을 나타냅니다.
