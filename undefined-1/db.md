@@ -170,3 +170,16 @@ FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY
   * (애플리케이션) 데이터를 조작하는 프로그램 내에서 데이터 생성, 수정, 삭제 시 무결성 조건 검증&#x20;
   * (DB트리거) 트리거 이벤트 시 저장 SQL실행, 무결성 조건 실행&#x20;
   * (제약조건) DB제약조건 기능 선언하여 무결성 유지\
+
+
+### **JDBC / ODBC 차이**
+
+* Java Database Connectivity(JDBC)
+  * java에서 DB에 접근하여 (작업) 데이터를 조회/삽입/수정/삭제 가능
+  * 연결해주는 응용프로그램 인터페이스인 JAVA API. DBMS 종류에 따라 그에 맞는 jdbc를 설치해야함.
+
+
+
+* Open Database Connectivity(ODBC)
+  * 응용프로그램에서 DB 접근을 위한 표준 개방형 응용 프로그램 인터페이스.&#x20;
+  * MS사에서 만들어진 것, DB2/Excel/Text 등 여러 종류의 데이터에 접근할 수 있다.
