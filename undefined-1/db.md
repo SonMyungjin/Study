@@ -183,3 +183,21 @@ FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY
 * Open Database Connectivity(ODBC)
   * 응용프로그램에서 DB 접근을 위한 표준 개방형 응용 프로그램 인터페이스.&#x20;
   * MS사에서 만들어진 것, DB2/Excel/Text 등 여러 종류의 데이터에 접근할 수 있다.
+
+
+
+**오라클과 MySQL의 차이는?**
+
+*   Oracle
+
+    * 대규모 트랜잭션로드를 처리하고 성능을 최적화하기위해 여러 서버에 대용량 DB분산
+    * 절차적 언어를 통해 DB내 내장된 프로그램의 작성을 지원함.&#x20;
+    * (독립실행, 특정 이벤트 의해 트리거)
+
+
+* MySQL
+  * 단일 DB로 제한되어있어, 매일 수백만번 액세스하는 대용량 DB에는 부적합&#x20;
+  * DB를 이전상태로 복원하는데 도움이되는 저장점이 없음&#x20;
+  * (COMMIT, ROLLBACK만 존재)
+
+![](<../.gitbook/assets/image (17).png>)
