@@ -57,3 +57,5 @@
 * [🗣 면접 준비](undefined-1/README.md)
   * [JAVA](undefined-1/java.md)
   * [DB](undefined-1/db.md)
+* [🖥 알고리즘](undefined-2/README.md)
+  * [스택](undefined-2/undefined.md)
