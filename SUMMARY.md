@@ -59,3 +59,4 @@
   * [DB](undefined-1/db.md)
 * [🖥 알고리즘](undefined-2/README.md)
   * [스택](undefined-2/undefined.md)
+  * [큐](undefined-2/undefined-1.md)
