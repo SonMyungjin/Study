@@ -50,7 +50,7 @@
   * 클라이언트가 리소스 위치를 알고 URI 지정
   * POST와 차이점
 
-![](<../.gitbook/assets/image (12).png>)
+![](<../.gitbook/assets/image (12) (1).png>)
 
 ![](<../.gitbook/assets/image (22).png>)
 

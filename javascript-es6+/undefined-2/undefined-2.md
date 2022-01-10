@@ -137,7 +137,7 @@ function sayHiBye(firstName, lastName) {
 
     ****
 
-![](<../../.gitbook/assets/image (12) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (12) (1) (1) (1) (1).png>)
 
 
 

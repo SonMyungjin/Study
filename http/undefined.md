@@ -71,7 +71,7 @@
 
 &#x20;
 
-![](<../.gitbook/assets/image (12) (1) (1).png>)
+![](<../.gitbook/assets/image (12) (1) (1) (1).png>)
 
 #### <mark style="background-color:orange;">TCP 특징</mark>
 
