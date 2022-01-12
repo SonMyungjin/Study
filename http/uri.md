@@ -71,7 +71,7 @@
 
 ![](<../.gitbook/assets/image (36) (1).png>)
 
-![](<../.gitbook/assets/image (19).png>)
+![](<../.gitbook/assets/image (19) (1).png>)
 
 1. DNS 조회를 통해 IP와 PORT 번호를 알아냄
 2. HTTP 요청 메시지 생성(HTTP 메소드 + path + query string + HTTP 버전 정보 + HOST 정보)
