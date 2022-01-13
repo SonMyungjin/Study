@@ -154,7 +154,7 @@ list = { value: "new item", next: list };
 list.next = list.next.next;
 ```
 
-![](<../../.gitbook/assets/image (5) (1).png>)
+![](<../../.gitbook/assets/image (5) (1) (1).png>)
 
 
 

@@ -52,6 +52,7 @@
 * [📙 JAVA](java/README.md)
   * [기본 개념](java/undefined/README.md)
     * [Wrapper Class](java/undefined/wrapper-class.md)
+    * [Static](java/undefined/static.md)
   * [객체 지향 프로그래밍](java/undefined-1.md)
 * [🔥 용어 정리](undefined/README.md)
   * [DOM이란?](undefined/dom.md)
